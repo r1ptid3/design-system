@@ -1,16 +1,6 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 3,
   "settings": {
-    "appearanceTools": true,
     "color": {
-      "link": true,
-      "custom": false,
-      "customDuotone": false,
-      "customGradient": false,
-      "defaultDuotone": false,
-      "defaultGradients": false,
-      "defaultPalette": false,
       "palette": [
         {
           "name": "black",
@@ -84,20 +74,11 @@
         }
       ]
     },
+    "layout": {
+      "contentSize": "704px",
+      "wideSize": "1320px"
+    },
     "spacing": {
-      "margin": true,
-      "padding": true,
-      "defaultSpacingSizes": false,
-      "customSpacingSize": true,
-      "units": [
-        "%",
-        "px",
-        "em",
-        "rem",
-        "vh",
-        "vw"
-      ],
-      "blockGap": true,
       "spacingSizes": [
         {
           "size": "clamp(0.75rem, calc(0.75rem + (1vw - 6.4000px) * 0.0000), 0.75rem)",
@@ -137,10 +118,6 @@
       ]
     },
     "typography": {
-      "dropCap": false,
-      "fluid": false,
-      "defaultFontSizes": false,
-      "fontFamilies": [],
       "fontSizes": [
         {
           "name": "X-Small",
@@ -159,11 +136,6 @@
         }
       ]
     },
-    "useRootPaddingAwareAlignments": true,
-    "layout": {
-      "contentSize": "704px",
-      "wideSize": "1320px"
-    },
     "custom": {
       "--wpvip-border-radius": "clamp(0.5rem, calc(0.5rem + (1vw - 6.4000px) * 0.5000), 0.75rem)",
       "--wpvip-lead-font-size": "clamp(2.5rem, calc(2.5rem + (1vw - 6.4000px) * 4.0000), 4.5rem)",
@@ -172,26 +144,6 @@
   },
   "styles": {
     "elements": {
-      "button": {
-        "color": {
-          "background": "var(--wp--preset--color--black)",
-          "text": "var(--wp--preset--color--white)"
-        },
-        "border": {
-          "radius": "var(--wpvip-border-radius)"
-        },
-        "spacing": {
-          "padding": {
-            "top": "0.625rem",
-            "right": "1.25rem",
-            "bottom": "0.625rem",
-            "left": "1.25rem"
-          }
-        },
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
-        }
-      },
       "h1": {
         "typography": {
           "fontSize": "clamp(2.375rem, calc(2.375rem + (1vw - 6.4000px) * 2.5000), 3.625rem)",
