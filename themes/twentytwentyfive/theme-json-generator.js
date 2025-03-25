@@ -213,6 +213,9 @@ class ThemeJsonGenerator {
 		console.log('dynamic-theme.json was created successfully');
 	}
 
+	/**
+	 * Generates theme.json object
+	 */
 	generate() {
 		const tokens = this.loadTokens();
 		const colors = this.generateColors(tokens);
