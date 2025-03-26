@@ -14,8 +14,8 @@
     "start": "wp-scripts",
     "js-lint": "./node_modules/.bin/eslint",
     "js-fix": "./node_modules/.bin/eslint --fix",
-    "generate-dynamic-json": "node theme-json-generator.js",
-    "merge-theme-json": "node merge-theme-json.js",
+    "generate-dynamic-json": "node wpvip-theme-json/theme-json-generator.js",
+    "merge-theme-json": "node wpvip-theme-json/merge-theme-json.js",
     "generate-theme-json": "npm run generate-dynamic-json && npm run merge-theme-json"
   },
   "devDependencies": {
