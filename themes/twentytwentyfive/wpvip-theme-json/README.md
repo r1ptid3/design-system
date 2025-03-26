@@ -113,6 +113,22 @@ wpvip/sizes/mobile.border.radius
 
 ---
 
+## Export (`tokens.json`) from Token Studio
+
+1. Import variables into Token Studio from Figma
+![Import Variables into Token Studio](img/token-studio-import-variables.png)
+2. Make sure that `styles` are renamed to `static` and placed under `wpvip` in tokens hierarchy.
+![Token Studio styles location](img/token-studio-styles-location.png)
+3. Mark all tokens with checkboxes and press export button
+![Token Studio export step 1](img/token-studio-export-1.png)
+4. Export tokens using recommended settings
+![Token Studio export step 2](img/token-studio-export-2.png)
+5. Rename exported `.json` file into `tokens.json` and place it to `your-theme/wpvip-theme-json/` folder
+6. **Note:** CSS variables are only generated for dynamic variables defined explicitly in Figma. If you wish to use CSS variables, ensure your text styles in Figma are linked to these dynamic tokens. Static text or headings (not linked to dynamic tokens) will not have CSS variables automatically created.
+![Token Studio settings](img/token-studio-settings.png)
+
+___
+
 ## Clamp Generation (`utils.js`)
 
 Responsive clamp values for CSS are calculated using the `clampRem` function inside `utils.js`:
