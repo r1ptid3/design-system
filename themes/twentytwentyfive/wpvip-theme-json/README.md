@@ -4,7 +4,7 @@ This guide describes how to effectively manage the Theme JSON generation process
 
 ---
 
-## Folder Structure
+## - Folder Structure
 
 All Theme JSON-related files must reside in the following directory within your theme root:
 
@@ -25,7 +25,7 @@ your-theme/
 
 ---
 
-## NPM Scripts (`package.json`)
+## - NPM Scripts (`package.json`)
 
 Include these scripts in your `package.json` for easy automation:
 
@@ -45,7 +45,7 @@ npm run generate-theme-json
 
 ---
 
-## Important Notes
+## - Important Notes
 
 ### Dynamic JSON
 - **Never manually edit `dynamic-theme.json`**. It is auto-generated from your `tokens.json`, and any manual changes will be overwritten upon regeneration.
@@ -55,7 +55,7 @@ npm run generate-theme-json
 
 ---
 
-## Token Structure & Parsing
+## - Token Structure & Parsing
 
 Your `tokens.json` ( exported from Figma using free version of "Token Studio for Figma" plugin ) should adhere to the following structure for proper parsing:
 
@@ -113,7 +113,7 @@ wpvip/sizes/mobile.border.radius
 
 ---
 
-## Export (`tokens.json`) from Token Studio
+## - Export (`tokens.json`) from Token Studio
 
 1. Import variables into Token Studio from Figma <br>
 ![Import Variables into Token Studio](img/token-studio-import-variables.png)<br><br>
@@ -129,7 +129,7 @@ wpvip/sizes/mobile.border.radius
 
 ___
 
-## Clamp Generation (`utils.js`)
+## - Clamp Generation (`utils.js`)
 
 Responsive clamp values for CSS are calculated using the `clampRem` function inside `utils.js`:
 
@@ -148,7 +148,7 @@ Adjust viewport ranges (`viewportMinPx` and `viewportMaxPx`) directly within `ut
 
 ---
 
-## Merging Static & Dynamic JSON
+## - Merging Static & Dynamic JSON
 
 Running the following command:
 
@@ -169,7 +169,7 @@ After a new `theme.json` is generated, validate it and replace the main `theme.j
 
 ---
 
-## Recommended Workflow
+## - Recommended Workflow
 
 - Edit manually only in `static-theme.json`.
 - **Never** edit `dynamic-theme.json`.
