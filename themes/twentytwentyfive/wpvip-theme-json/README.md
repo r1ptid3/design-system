@@ -18,7 +18,9 @@ your-theme/
     ├── theme-json-generator.js    # Script to generate dynamic-theme.json
     ├── merge-theme-json.js        # Script to merge static and dynamic JSON
     ├── tokens.json                # Tokens exported from Figma
-    └── utils.js                   # Utility functions (clamp calculations)
+    ├── utils.js                   # Utility functions (clamp calculations)
+    └── img/
+        └── images.png             # Just for demo purpose
 ```
 
 ---
